@@ -46,7 +46,7 @@ UI.prototype.displayMessage = function(message,type) {
     we will use setTimeout for this */
     setTimeout(function() {
         div.remove();
-    },2000);/* after the 2 second alert will be disapper
+    },2000);/* after the 2 second alert will be disapper*/
 
 
 
