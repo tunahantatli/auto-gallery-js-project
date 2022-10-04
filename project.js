@@ -32,3 +32,22 @@ function addCar(e) {
  
     
 }
+// add error alert for empty field
+UI.prototype.displayMessage = function(message,type) {
+    const cardBody = document.querySelector(".card-body"); /* we have 2 card-body class 
+    but  we want to use first card-body class. querySelector will choose the first card-body.
+    if we used querySelectorAll we must used index number of card-body class.*/
+    //create alert div 
+    const div = document.createElement('div');
+    div.className = `alert alert-${type}`;
+    div.textContent = message;
+    /* we must add child this, and we do it in below*/
+    card.appendChild(div); /* we add div but we want it to disapper after a certain time. 
+    we will use setTimeout for this */
+    setTimeout(function() {
+        div.remove();
+    },2000);/* after the 2 second alert will be disapper
+
+
+
+}
